@@ -59,6 +59,3 @@ What's not possible to migrate yet:
 - Wireguard
 
 
-
-## TODO!! 
-- Migrate firewall rules on vpn interfaces  
