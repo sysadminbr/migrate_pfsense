@@ -407,7 +407,7 @@ if __name__ == '__main__':
         static_leases = get_static_dhcp_leases(dhcpd_interface)
         for lease in static_leases:
             lease["if"] = interface_config["if"]
-            req = opn.requestg_get(f'/services_dhcp_edit.php?if={lease["if"]}' )
+            req = opn.request_get(f'/services_dhcp_edit.php?if={lease["if"]}' )
 
             data = lease
             data["submit"] = "Save"
