@@ -164,7 +164,7 @@ if __name__ == '__main__':
         if not vpn_config['description'] in ovpn_servers:
             opn.import_openvpn_server(vpn_config)
         else:
-            print(f'openvpn server "{vpn_config['description']}" already registered. skipping it.')
+            print(f'openvpn server {vpn_config['description']} already registered. skipping it.')
     
 
 
