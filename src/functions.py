@@ -113,7 +113,11 @@ def extract_nat_rule_attributes(el_rule):
                     elif dst_attr.tag == 'network':
                         rule['destination']['type']  = dst_attr.tag
                         rule['destination']['value'] = dst_attr.text
+                    elif dst_attr.tag == 'address':
+                        rule['destination']['type']  = dst_attr.tag
+                        rule['destination']['value'] = dst_attr.text
 
+        
         if rule_attr.tag == 'ipprotocol':
             rule['ipprotocol'] = rule_attr.text
             
